@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.logo img {
+    width: 300px;
+    height: auto;
+
+    position: relative;
+    top: -90px;
+
+}
+
+header {
+    background-color: #191919;
+    width: 2160px;
+    height: 350px;
+    display: flex;
+
+}
+
+h2 {
+    position: relative;
+    left: 50px;
+    color: #191919;
+    margin-top: 10px;
+    font-size: 60px;
+    text-align: center;
+    width: 100%;
+}
+
+.pesquisa {
+    position: relative;
+    left: 520px;
+    margin-top: 50px;
+    width: 350px;
+    height: 45px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+.botao {
+    position: relative;
+    width: 50px;
+    height: 45px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    left: 530px;
+    top: 50px;
+}
+.produtos
+{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+gap: 200px;
+padding: 20px;
+row-gap: 400px;
+}
+.card
+{
+
+height: 400px;
+border: 1px solid gray;
+border-radius: 10px;
+cursor: pointer;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 5px;
+    
+}
+h3{
+font-size:21px;
+align-items: center;
+height: 30px;
+width: -30;
+left: -100px;
+color: rgb(0, 0, 0);
+}
+nav
+{
+position: relative;
+top:115px;
+left:-60px;
+align-items: center;
+font-size:larger;
+
+
+}
+nav ul 
+{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    margin-left: right;
+   
+}
+p
+{
+height: 40px;
+font-size: 24px;
+align-items: center;
+font-weight: bold;
+color: rgb(0, 0, 0);
+
+}
+.card button{
+    width: 180px;  
+    height: 50px;   
+
+    font-size: 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+   background: #111;
+    color: white;
+}
+body
+{
+
+font-family: 'poppins', sans-serif;
+background-color:white;
+}
+.tamanhos{
+    margin-top: 8px;
+    display: inline-block;
+    padding: 8px 18px;
+    background: #f5f5f5;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    letter-spacing: 2px;
+}
+i{
+    font-size: 10px;
+    color: #ffffff;
+}
+.icone-login{
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #0bcce1;
+    padding: 90px;
+    margin-left: 200px;
+    margin-top: 120px;
+    border-radius: 50%;
+}

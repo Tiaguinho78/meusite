@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 2px;
+
+    box-sizing: border-box;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    height: 150px;
+    padding: 40px 10px;
+    background-color: #191919;
+
+}
+
+h1 {
+    color: white;
+    font-size: 28px;
+    margin-top: -20px;
+    position: relative;
+    top: -20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+
+
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 590;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-left: right;
+}
+
+nav a:hover {
+    color: #ff7701;
+}
+
+h1 img {
+
+    width: 350px;
+    height: auto;
+    display: block;
+    margin-top: -140px;
+}
+
+main {
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    background-color: #191919;
+}
+
+.banner {
+
+    width: 100%;
+    height: 647px;
+    width: 4000%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.banner img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+
+}
+
+.slides {
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    transition: 1s;
+    filter: saturate(50%)
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.texto-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 70px;
+    font-weight: bold;
+    color: rgb(167, 167, 167);
+
+    text-align: center;
+    z-index: 10;
+
+    width: 80%;
+    text-shadow: 2px 2px 10px black;
+}
+
+.pesquisa {
+    position: relative;
+    left: -30px;
+    margin-top: 50px;
+    width: 350px;
+    height: 45px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    top: -50px;
+}
+
+.botao {
+    position: relative;
+    width: 60px;
+    height: 45px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    left: -105px;
+    top: -0px;
+}
+
+body {
+
+    margin: 0;
+    min-height: 100vh;
+    background-color: #191919;
+
+}
+
+.card {
+    width: 350px;
+    height: 700px;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    position: relative;
+    cursor: pointer;
+    background-color: #6f829d;
+    box-shadow: 0 5px 20px rgba(47, 0, 255, 0.15);
+    filter: grayscale(80%);
+    transition: 0.4s;
+    margin-top: -23px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.texto-card {
+    position: absolute;
+    color: white;
+    bottom: 20px;
+    left: 20px;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    text-shadow: 2px 2px 8px rgb(251, 5, 5);
+}
+
+.banner2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 70px;
+    font-weight: bold;
+    color: rgb(167, 167, 167);
+
+    text-align: center;
+    z-index: 10;
+
+    width: 80%;
+    text-shadow: 2px 2px 10px black;
+
+}
+
+.faixa {
+    width: 100%;
+    height: 130px;
+
+    background: linear-gradient(90deg, #6c1010, #6f0d0d);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.20);
+}
+
+.faixa h1 {
+    display: flex;
+
+    color: white;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+
+    margin: 0;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.30);
+}
+
+.faixa3 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: 30px;
+}
+
+.quadrado5 {
+    width: 1850px;
+    height: 600px;
+    background-color: rgb(4, 112, 119);
+    border-radius: 18px;
+
+}
+
+.faixa {
+    font-size: 30px;
+    font-weight: bold;
+    animation: piscar 3s infinite;
+}
+
+@keyframes piscar {
+   40% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
