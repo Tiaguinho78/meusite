@@ -153,7 +153,7 @@ main {
     border-radius: 10px;
     cursor: pointer;
     font-size: 14px;
-    left: -105px;
+    left: -90px;
     top: -0px;
 }
 
@@ -256,15 +256,26 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
-    align-items: 30px;
+   align-items: center;
+   
+}
+.faixa3 img
+{
+width: 99%;
+height: 100%;
+position: relative;
+margin: auto;
+filter: grayscale(150%);
+opacity: 40%;
 }
 
 .quadrado5 {
-    width: 1850px;
-    height: 600px;
-    background-color: rgb(4, 112, 119);
+    width: 150px;
+    height: 400px;
     border-radius: 18px;
-
+position: absolute;
+top: -20px;
+left: 20px;
 }
 
 .faixa {
