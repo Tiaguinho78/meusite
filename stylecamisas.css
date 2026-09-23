@@ -1,173 +1,384 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
-.logo img {
-    width: 300px;
-    height: auto;
+body{
+    background:#c5c4c4;
+    color:#222;
+}
 
+
+
+header{
+
+    background:#000000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 60px;
+
+    flex-wrap:wrap;
+
+    gap:25px;
+
+}
+
+.logo img{
+
+    width:350px;
+
+}
+
+
+.pesquisa-box{
+
+    display:flex;
+    align-items:center;
+
+}
+
+.pesquisa{
+
+    width:380px;
+    height:48px;
+
+    padding:0 18px;
+
+    border:none;
+
+    border-radius:30px 0 0 30px;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+.botao{
+
+    width:55px;
+    height:48px;
+
+    border:none;
+
+    background:#00bcd4;
+
+    color:white;
+
+    border-radius:0 30px 30px 0;
+
+    cursor:pointer;
+
+    transition:.3s;
     position: relative;
-    top: -90px;
+    left: -160px;
+   
 
 }
 
-header {
-    background-color: #191919;
-    width: 100%;
-    height: 200px;
-    display: flex;
+.botao:hover{
+
+    background:#0097a7;
 
 }
 
-h2 {
-    position: relative;
-    left: 50px;
-    color: #191919;
-    margin-top: 10px;
-    font-size: 35px;
-    text-align: center;
-    width: 100%;
-}
 
-.pesquisa {
-    position: relative;
-    left: 520px;
-    margin-top: 50px;
-    width: 350px;
-    height: 45px;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 25px;
-    font-size: 16px;
-    outline: none;
-}
 
-.botao {
-    position: relative;
-    width: 50px;
-    height: 45px;
-    padding: 12px 18px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: -10px;
-    left: 530px;
-    top: 50px;
-    background-color: #0bcce1;
-}
-.produtos
-{
-display: grid;
-  grid-template-columns: repeat(4,1fr);
-gap: 20px;
-padding: 20px;
+nav ul{
+
+    display:flex;
+
+    gap:30px;
+
+    list-style:none;
 
 }
-.card
-{
-width: 100%;
-height: 420px;
-border: 1px solid gray;
-border-radius: 15px;
-overflow: hidden;
-display: flex;
-flex-direction: column;
 
+nav a{
 
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.3s;
 
 }
+
+nav a:hover{
+
+    color:#00bcd4;
+
+}
+
+
+
+.camisetas-masculinas{
+
+    text-align:center;
+
+    margin:50px 0 35px;
+
+    font-size:34px;
+
+    color:#222;
+
+}
+
+
+
+.produtos{
+
+    width:95%;
+
+    max-width:1500px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+
+.card{
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 35px rgba(0,0,0,.18);
+
+}
+
 .card img{
-    width: 100%;
-    height: 220px;
-    object-fit: cover; 
-   
-    
-}
-h3{
-font-size:17px;
-align-items: center;
-height: 30px;
-width: -30;
-left: -100px;
-color: rgb(0, 0, 0);
-}
-nav
-{
-position: relative;
-top:115px;
-left:-60px;
-align-items: center;
-font-size:larger;
 
+    width:100%;
 
-}
-nav ul 
-{
-    display: flex;
-    list-style: none;
-    gap: 40px;
+    height:260px;
 
+    object-fit:cover;
 
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 23px;
-    font-weight: bold;
-    margin-left: right;
-   
-}
-p
-{
-height: 40px;
-font-size: 18px;
-align-items: center;
-font-weight: bold;
-color: rgb(0, 0, 0);
-display: block;
+.card h3{
+
+    text-align:center;
+
+    margin:18px 15px 10px;
+
+    font-size:20px;
 
 }
-.card button{
-    width: 180px;  
-    height: 50px;   
 
-    font-size: 20px;
 
-    border: none;
-    border-radius: 8px;
 
-    cursor: pointer;
-   background: #111;
-    color: white;
+.avaliacao{
+
+    text-align:center;
+
+    color:#ffc107;
+
+    font-size:18px;
+
 }
-body
-{
-width: 100%;
-font-family: 'poppins', sans-serif;
-background-color:rgb(255, 255, 254);
+
+.avaliacao span{
+
+    color:#000000;
+
+    font-size:14px;
+
 }
+
+
 .tamanhos{
-    margin-top: 8px;
-    display: inline-block;
-    padding: 8px 18px;
-    background: #f5f5f5;
-    border-radius: 30px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #555;
-    letter-spacing: 2px;
-}
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+
+    margin:18px 0;
+
 }
 
-main {
-    max-width: 1200px;
-    margin: 0 auto;
+.tamanhos span{
+
+    width:38px;
+
+    height:38px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#efefef;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.tamanhos span:hover{
+
+    background:#00bcd4;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+
+
+.preco{
+
+    text-align:center;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#111;
+
+    margin-top:10px;
+
+}
+
+.parcelamento{
+
+    text-align:center;
+
+    color:#777;
+
+    margin:10px 0 20px;
+
+    font-size:15px;
+
+}
+
+
+
+.card button{
+
+    width:85%;
+
+    height:80px;
+
+    margin:auto auto 20px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#191919;
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.card button:hover{
+
+    background:#00bcd4;
+
+}
+
+
+
+.btn{
+
+    display:block;
+
+    margin:60px auto;
+
+    padding:14px 35px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#191919;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+margin-left: 800px;
+}
+
+.btn:hover{
+
+    background:#00bcd4;
+
+}
+
+
+
+@media(max-width:900px){
+
+    header{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .pesquisa{
+
+        width:260px;
+
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
 }
